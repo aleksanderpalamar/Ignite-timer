@@ -10,7 +10,7 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
         <CyclesContextProvider>
-          <Router />
+          <Router />          
         </CyclesContextProvider>
       </BrowserRouter>
 

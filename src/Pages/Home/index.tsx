@@ -12,6 +12,7 @@ import { useContext } from "react";
 import { NewCycleForm } from "./components/NewCycleForm";
 import { Countdown } from "./components/Countdown/intex";
 import { CyclesContext } from "../../contexts/CyclesContext";
+import { Footer } from "../../components/Footer";
 
 const newCycleFormValidationSchema = zod.object({
   task: zod.string().min(1, "Informe a tarefa"),
@@ -70,6 +71,7 @@ export function Home() {
           </StartCountdownButton>
         )}
       </form>
+      <Footer />
     </HomeContainer>
   );
 }
